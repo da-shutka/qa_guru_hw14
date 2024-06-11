@@ -91,7 +91,7 @@ clean ${TASK}
 [<img width="50%" title="Allure Report" src="media/img/Allure_Report_Main.PNG"/>](https://jenkins.autotests.cloud/job/C27-petrova_di-unit14/allure/)
 
 ### *Тест-кейсы*
-[<img width="50%" title="Allure Report" src="media/img/Allure_Report_Suites.PNG"/>](https://jenkins.autotests.cloud/job/C27-petrova_di-unit14/allure/#suites/2184bf7abab8d293fe47b00eaed1b94c/f9953d2919a8ac1e/)
+[<img width="50%" title="Allure Report" src="media/img/Allure_Report_Suites.PNG"/>](https://jenkins.autotests.cloud/job/C27-petrova_di-unit14/allure/#suites)
 
 ### *Графики*
 [<img width="50%" title="Allure Report" src="media/img/Allure_Report_Graphs.PNG"/>](https://jenkins.autotests.cloud/job/C27-petrova_di-unit14/allure/#graph)
