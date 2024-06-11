@@ -9,6 +9,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import properties.SystemProperties;
 
 import java.util.Map;
 
@@ -17,9 +18,12 @@ public class TestBase {
     @BeforeAll
     static void settingsBeforeAll() {
         Configuration.pageLoadStrategy = "eager";
-        Configuration.browserSize = "1920x1080";
+        Configuration.browser = SystemProperties.browser;
+        Configuration.browserSize = SystemProperties.browserSize;
+        Configuration.browserVersion = SystemProperties.browserVersion;
+
         Configuration.baseUrl = "https://bercut.com/";
-        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
+        Configuration.remote = "https://user1:1234@" + SystemProperties.wdHost + "/wd/hub";
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(
