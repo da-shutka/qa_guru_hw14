@@ -92,7 +92,7 @@ public class BercutPage {
 
     @Step("Проверить, что каталог изменился")
     public void checkSelectedCatalog(String catalog) {
-        $$(".tabs-catalog__button.active").findBy(text(catalog)).click();
+        $$(".tabs-catalog__button.active").findBy(text(catalog)).should(exist);
     }
 
     @Step("Перейти на страницу Карьера")
